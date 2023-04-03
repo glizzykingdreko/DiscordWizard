@@ -18,16 +18,16 @@ To set up DiscordWizard, configure the `settings.yaml` file as shown:
 ```yaml
 client:
   token: "" # Token of the account in the server to be mirrored
-  server_id: 1076897222881707200 # Server ID
+  server_id: 107... # Server ID
   excluded_channels:
     - 0 # List of excluded channels, if any
   regex_filter: "(badword1|badword2)" # Regex to block forwarding of messages based on it
 
 server:
   token: "" # Administrator token within your server
-  server_id: 1092211111969689751 # Your server ID
+  server_id: 109... # Your server ID
   interval: 60 # Delay in seconds between interactions with Discord APIs to create channels/webhooks/categories
-  webhook_name: "DickNBalls" # Webhook name to use
+  webhook_name: "DiscordWizard" # Webhook name to use
   websocket:
     port: 8080 # Port to use
     host: "localhost" # Host to use
