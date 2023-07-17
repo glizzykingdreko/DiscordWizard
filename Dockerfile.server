@@ -1,0 +1,17 @@
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install -r requirements.txt
+
+COPY server.py /app/server.py
+
+COPY proxies.txt /app/proxies.txt
+
+COPY settings.yaml /app/settings.yaml
+
+EXPOSE 8002
+
+CMD ["python", "/app/server.py"]

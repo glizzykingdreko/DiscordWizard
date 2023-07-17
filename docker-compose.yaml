@@ -1,0 +1,21 @@
+version: '3'
+services:
+  server:
+    build: 
+      context: .
+      dockerfile: Dockerfile.server
+    ports:
+      - "5000:5000"
+    networks:
+      - discord
+
+  client:
+    build: 
+      context: .
+      dockerfile: Dockerfile.client
+    networks:
+      - discord
+
+networks:
+  discord:
+    external: true

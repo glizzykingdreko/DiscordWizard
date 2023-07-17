@@ -1,15 +1,15 @@
 client:
-  token: "Nj..."
-  server_id: 1071...
+  token: ""
+  server_id: 
   excluded_channels:
     - 0
-  regex_filter: "(badword1|badword2)"
+  regex_filter: ""
 
 server:
-  token: "OD..."
-  server_id: 108...
+  token: ""
+  server_id:  
   interval: 60
-  webhook_name: DiscordWizard
+  webhook_name: ""
   websocket:
-    port: 8080
-    host: "localhost"
+    port: 5000
+    host: "0.0.0.0"
